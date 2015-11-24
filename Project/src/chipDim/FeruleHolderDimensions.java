@@ -3,13 +3,13 @@ package chipDim;
 public class FeruleHolderDimensions {
 
 	private double d, r;
-	 
+	
 	// Asks the user to set the depth of the ferule holder and the
 	// width of the ferule and radiance allowance.
 	
-	public FeruleHolderDimensions (double depth, double diam, double diamAllow) {
+	public FeruleHolderDimensions (double depth, double radAllow) {
 		d = depth;
-		r = (diam/2)+(diamAllow)/2;
+		r = (1.25/2)+(radAllow);
 	}
 	
 	public double Angle() {
